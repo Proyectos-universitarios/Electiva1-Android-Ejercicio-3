@@ -6,14 +6,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="224dp">
+        </LinearLayout>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="USUARIO"
+                android:ems="10"
+                android:id="@+id/editText12"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText21" android:text="CONTRASEÑA"/>
+        <Button
+                android:text="INGRESAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button" android:onClick="Redireccion"/>
+        <Button
+                android:text="SALIR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button2"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

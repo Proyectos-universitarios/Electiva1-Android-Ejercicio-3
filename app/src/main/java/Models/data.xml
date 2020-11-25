@@ -1,15 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Electiva1Ejercicio3</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string-array name="usuarios">
+<string-array name="usuarios">
         <item>Administrador</item>
         <item>usuario1</item>
         <item>usuario2</item>
@@ -31,7 +22,7 @@
         <item>La Libertad</item>
         <item>Chalatenango</item>
         <item>Cuscatlán</item>
-        <item>San Salvador</item>
+        <item>San Salvador (la capital)</item>
         <item>La Paz</item>
         <item>Cabañas</item>
         <item>San Vicente</item>
@@ -219,6 +210,4 @@
         <item>"* Meanguera del Golfo (pueblo)"</item>
         <item>"* Santa Rosa de Lima (ciudad),"</item>
     </string-array>
-
-
 </resources>
