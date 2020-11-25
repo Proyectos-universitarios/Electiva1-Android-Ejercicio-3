@@ -19,15 +19,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="USUARIO"
                 android:ems="10"
-                android:id="@+id/editText12"/>
+                android:id="@+id/txtusername" android:hint="USUARIO"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText21" android:text="CONTRASEÑA"/>
+                android:id="@+id/txtpassword" android:hint="CONTRASEÑA"/>
         <Button
                 android:text="INGRESAR"
                 android:layout_width="match_parent"
@@ -35,6 +34,14 @@
         <Button
                 android:text="SALIR"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2"/>
+                android:layout_height="wrap_content" android:id="@+id/button2" android:onClick="Exit"/>
+        <TextView
+                android:text="ROBERTO ESAU PERDOMO ARAGON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:textStyle="bold"/>
+        <TextView
+                android:text="29-4645-2013"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
