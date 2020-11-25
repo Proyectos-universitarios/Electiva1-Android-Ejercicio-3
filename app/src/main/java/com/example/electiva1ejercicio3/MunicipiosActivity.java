@@ -51,7 +51,7 @@ public class MunicipiosActivity extends ListActivity {
 
         if (Seleccion != "")
         {
-            Intent intent = new Intent(this, MunicipiosActivity.class);
+            Intent intent = new Intent(this, DetailsActivity.class);
             intent.putExtra("Municipio", Seleccion);
             intent.putExtra("IdDepartamento", IdDepartamentoActual);
             startActivity(intent);
