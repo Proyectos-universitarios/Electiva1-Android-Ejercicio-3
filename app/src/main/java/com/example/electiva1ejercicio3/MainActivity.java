@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Hacemos referencias a los edittext del layout
         txtUsername = (EditText) findViewById(R.id.txtusername);
         txtPassword = (EditText) findViewById(R.id.txtpassword);
     }
 
+    // Metodo encargado de redireccionar a ActivityDepartamentos
     public void Redireccion(View view)
     {
         String Username =txtUsername.getText().toString();
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Metodo encargado de validar usuario y contraseña con los datos del XML
     public boolean ValidatePassword(String Username,String Password)
     {
         boolean Result = false;
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         return  Result;
     }
 
+    //Este metodo recorrer los usuarios en el XML
     public boolean RecorrerData(String Username,String Password) {
         Boolean Resultado = false;
         String[] ListaUsuarios,ListaPassword;

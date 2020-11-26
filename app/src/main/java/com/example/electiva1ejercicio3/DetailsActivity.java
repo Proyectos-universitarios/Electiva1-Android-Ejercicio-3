@@ -18,20 +18,20 @@ public class DetailsActivity extends AppCompatActivity {
         TextDepa = (TextView) findViewById(R.id.txtDepa);
         TextMuni = (TextView) findViewById(R.id.txtMuni);
 
+        //Obtenemos los datos del Activity anterior
         Intent intentNew = getIntent();
-
         if (intentNew != null){
         String Municipio = intentNew.getStringExtra("Municipio");
         int IdDepartamentoActual = intentNew.getIntExtra("IdDepartamento",0);
 
         String[] Listdepartamentos = getResources().getStringArray(R.array.departamentos);
 
-        TextDepa.setText("Departamento: "+Listdepartamentos[IdDepartamentoActual].toString());
+            //Mostramos los datos seleccionados por el usuario
+            TextDepa.setText("Departamento: "+Listdepartamentos[IdDepartamentoActual].toString());
             TextMuni.setText("Municipio: "+Municipio);
         }else
         {
             Toast.makeText(this, "Intente con un nuevo departamento", Toast.LENGTH_SHORT).show();
-
         }
     }
 }
